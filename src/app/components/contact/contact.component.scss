@@ -1,0 +1,57 @@
+
+@import "../../../assets/scss/headings.scss";
+@import "../../../assets/scss/layout.scss";
+
+.symUnderscore {
+	width: 12px;
+	padding-bottom: 15px;
+}
+
+.contactWrap, .mapWrap, .socialWrap {
+	font-size: 1.0rem;
+
+	p, a {
+		color: $blackPure;
+		font-family: 'maisonneue-mono', monospace;
+		font-size: 0.875em;
+	}
+
+	p {
+		line-height: 20px;
+		margin: 0;
+	}
+}
+
+.socialWrap {
+
+	li a {
+		font-size: 0.875em;
+		line-height: 20px;
+	}
+}
+
+.contactImgWrap {
+	padding: 48px 0 177px;
+
+	@media (min-width: $screenMD) {
+		padding: 48px 40px 177px 15px;
+	}
+
+}
+
+.phoneNum {
+	padding-top: 24px;
+}
+
+.sectionWrap {
+	padding-bottom: 80px;
+
+	@media (min-width: $screenSM) and (max-width: $screenMD) {
+		padding-top: 230px;
+		padding-bottom: 200px;
+	}
+
+	@media (min-width: $screenMD) {
+		padding-bottom: 330px;
+	}
+}

@@ -1,0 +1,56 @@
+@import "../assets/scss/vars.scss";
+@import "../assets/scss/layout.scss";
+
+.wrapHeader {
+	padding-top: 35px;
+	padding-left: 40px;
+
+	@media (min-width: $screenMD) {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	img {
+		position: relative;
+		z-index: 7;
+	}
+
+	#logo {
+		width: 84px;
+	}
+
+	#menu {
+		float: right;
+		padding-right: 25px;
+
+		@media (min-width: $screenMD) {
+			display: none;
+		}
+
+		img {
+			width: 20px;
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+
+	#menu .aniMenu {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+}
+
+#nav {
+	background: $blackPure;
+
+	@media (min-width: $screenSM) {
+		background: transparent;
+	}
+}
+
+header {
+	position: relative;
+	z-index: 8;
+}

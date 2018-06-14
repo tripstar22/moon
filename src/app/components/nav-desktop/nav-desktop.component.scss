@@ -1,0 +1,107 @@
+
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/fonts.scss";
+
+.navOuterWrap {
+	width: 100%;
+	background: $blackPure;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -10000px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	@media (min-width: $screenMD) {
+		background: transparent;
+		position: relative;
+	}
+
+	.navWrap {
+    	position: relative;
+    }
+}
+
+.navOuterWrap.aniNav {
+	right: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navDesktop {
+	list-style: none;
+	list-style-type: none;
+	text-align: right;
+	padding: 172px 36px 0 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	@media (min-width: $screenMD) {
+		text-align: left;
+		padding: 0;
+		position: fixed;
+		top: 310px;
+		left: 56px;
+	}
+
+	li {
+		padding-bottom: 14px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		@media (min-width: $screenMD) {
+			padding-bottom: 3px;
+		}
+
+		a {
+			color: $whitePure;
+			font-family: 'maisonneue-mono', monospace;
+			font-size: 0.875em;
+			line-height: 17px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			text-decoration: none;
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+
+			@media (min-width: $screenMD) {
+				color: $blackPure;
+			}
+		}
+
+		// active nav class
+		.activeItem {
+			background: $whitePure;
+			color: $blackPure;
+			padding: 3px 17px;
+
+			@media (min-width: $screenMD) {
+				background: $blackPure;
+				color: $whitePure;
+			}
+		}
+	}
+}
+
+// classes to hide and show nav
+.aniShow {
+	height: auto;
+	opacity: 1;
+}
+
+.aniHide {
+	height: 0;
+	opacity: 0;
+}
+
+#navOuterWrap.aniNav {
+	position: fixed;
+	z-index: 7;
+}

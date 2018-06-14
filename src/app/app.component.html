@@ -1,0 +1,12 @@
+<div id="appWrap" (window:resize)="wrapWidth($event)">
+	<header>
+		<div class="row">
+			<div class="small-12 columns wrapHeader">
+				<img src="assets/imgs/logo_gray.png" id="logo" alt="moon" />
+				<a href="#" id="menu" (click)="aniNav($event); navMobileTgl($event)"><img src="assets/imgs/menu.png" alt="menu" /></a>
+			</div>
+		</div><!-- /.row -->
+	</header>
+	<router-outlet></router-outlet>
+	<moon-footer></moon-footer>
+</div>

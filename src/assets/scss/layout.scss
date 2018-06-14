@@ -1,0 +1,88 @@
+
+@import "vars.scss";
+
+.sectionWrap {
+	font-size: 1.0rem;
+	padding: 100px 0;
+
+	@media (min-width: $screenMD) {
+		padding: 301px 0 291px;
+	}
+}
+
+// visibility classes
+.hideMeXs{
+	display: none;
+
+	@media (min-width: $screenSM) {
+		display: inherit;
+	}
+}
+
+.hideMeSm {
+	display: inherit;
+
+	@media (min-width: $screenSM) {
+		display: none;
+	}
+
+	@media (min-width: $screenMD) {
+		display: inherit;
+	}
+}
+
+.hideMeSmDown {
+	display: none;
+
+	@media (min-width: $screenMD) {
+		display: inherit;
+	}
+}
+
+.hideMeMd {
+	display: inherit;
+
+	@media (min-width: $screenMD) {
+		display: none;
+	}
+
+	@media (min-width: $screenLG) {
+		display: inherit;
+	}
+}
+
+.hideMeMdDown {
+	display: none;
+
+	@media (min-width: $screenLG) {
+		display: inherit;
+	}
+}
+
+.hideMeLg {
+	display: inherit;
+
+	@media (min-width: $screenLG) {
+		display: none;
+	}
+
+	@media (min-width: $screenXL) {
+		display: inherit;
+	}
+}
+
+.hideMeLgDown {
+	display: none;
+
+	@media (min-width: $screenXL) {
+		display: inherit;
+	}
+}
+
+.hideMeXL {
+	display: inherit;
+
+	@media (min-width: $screenXL) {
+		display: none;
+	}
+}

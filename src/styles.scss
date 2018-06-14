@@ -1,0 +1,44 @@
+
+@import "assets/scss/helpers.scss";
+
+body {
+	background: url('assets/imgs/moon_grid_light.png')  repeat 0 0;
+	background-size: 150px 150px;
+	font-family: 'maisonneue-medium', sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+
+// class for body when mobile nav active
+.navMobile {
+	overflow-y: hidden;
+}
+
+ul {
+	list-style: none;
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+a {
+
+	&:focus {
+		outline: none;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	font-family: 'maisonneue-book', sans-serif;
+	font-size: 0.875em;
+	line-height: 24px;
+}
+
+#appWrap {
+	overflow: hidden;
+	position: relative;
+}

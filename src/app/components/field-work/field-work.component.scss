@@ -1,0 +1,312 @@
+
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/headings.scss";
+@import "../../../assets/scss/layout.scss";
+
+.fwFtImg {
+	font-size: 1.0rem;
+
+	img {
+		width: 100%;
+		max-width: 870px;
+	}
+
+	p {
+		color: $blackPure;
+		font-size: 0.750em;
+	}
+}
+
+.introWrap {
+	padding-bottom: 52px;
+}
+
+#newsFeed {
+	padding-bottom: 94px;
+
+	li {
+
+		@media (min-width: $screenMD) {
+			display: inline-block;
+
+			&:nth-child(odd) {
+				margin-right: 30px;
+			}
+		}
+	}
+
+	img, h5, p {
+		max-width: 373px;
+	}
+
+	img {
+		opacity: 0.8;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	h5, p {
+		color: $blackPure;
+		padding-left: 7px;
+	}
+
+	h5 {
+		font-family: 'maisonneue-medium', sans-serif;
+		font-size: 0.875em;
+		line-height: 14px;
+		padding-top: 17px;
+	}
+
+	p {
+		font-family: 'maisonneue-mono', monospace;
+		font-size: 0.750em;
+		line-height: 20px;
+		padding-bottom: 13px;
+	}
+}
+
+.hero {
+	width: 100%;
+	background: $blackPure   url('../../../assets/imgs/moon_grid_dark.png')  repeat 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+
+	.navOuterWrap {
+		display: none;
+
+		@media (min-width: $screenMD) {
+			display: inherit;
+		}
+	}
+
+	h1, h2 {
+		color: $whitePure;
+	}
+
+	h1 {
+		font-family: "Chronicle Text G1 A", "Chronicle Text G1 B";
+		font-style: italic;
+		font-weight: 400;
+		font-size: 1em;
+		line-height: 22px;
+		padding-bottom: 14px;
+	}
+
+	h2 {
+		font-family: 'maisonneue-medium', sans-serif;
+		font-size: 1.5em;
+		line-height: 37px;
+
+		@media (min-width: $screenSM) {
+			font-size: 3.125em;
+			line-height: 58px;
+		}
+	}
+}
+
+#sectionWrap {
+	background: $whitePure url('../../../assets/imgs/moon_grid_light.png')  repeat 0 0;
+	position: relative;
+}
+
+.heroWrap {
+	max-width: 80%;
+	margin: 130px auto 0;
+
+	@media (min-width: $screenSM) {
+		margin: 260px auto 0;
+	}
+
+	@media (min-width: $screenMD) {
+		max-width: 76%;
+		margin: 200px auto 0 0;
+	}
+
+	img {
+		width: 30px;
+		padding-bottom: 10px;
+	}
+}
+
+.scrollWrap {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	-webkit-transform: translateX(-6px);
+	-moz-transform: translateX(-6px);
+	transform: translateX(-6px);
+	-webkit-animation: aniHeroArrow 1.8s infinite;
+	-moz-animation: aniHeroArrow 1.8s infinite;
+	animation: aniHeroArrow 1.8s infinite;
+
+	@media (min-width: $screenSM) {
+		bottom: 70px;
+	}
+
+	img {
+		width: 12px;
+	}
+}
+
+// arrow bounce animation
+@-webkit-keyframes aniHeroArrow {
+	0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+    }
+  	40% {
+      -webkit-transform: translateY(-30px);
+    }
+  	60% {
+      -webkit-transform: translateY(-15px);
+    }
+}
+@-moz-keyframes aniHeroArrow {
+	0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+    }
+  	40% {
+      -moz-transform: translateY(-30px);
+    }
+  	60% {
+      -moz-transform: translateY(-15px);
+    }
+}
+@keyframes aniHeroArrow {
+	0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+  	40% {
+      transform: translateY(-30px);
+    }
+  	60% {
+      transform: translateY(-15px);
+    }
+}
+
+.navOuterWrap {
+
+	@media (min-width: $screenMD) {
+		background: transparent;
+		position: relative;
+	}
+
+	.navWrap {
+    	position: relative;
+    }
+}
+
+.navDesktop {
+	list-style: none;
+	list-style-type: none;
+	text-align: right;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	@media (min-width: $screenMD) {
+		text-align: left;
+		padding: 0;
+		position: absolute;
+		top: 310px;
+		left: 41px;
+		z-index: 5;
+	}
+
+	li {
+		padding-bottom: 14px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		@media (min-width: $screenMD) {
+			padding-bottom: 3px;
+		}
+
+		a {
+			color: $whitePure;
+			font-family: 'maisonneue-mono', monospace;
+			font-size: 0.875em;
+			line-height: 17px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			text-decoration: none;
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+}
+
+// classes to hide and show nav
+.aniShow {
+	height: auto;
+	opacity: 1;
+}
+
+.aniHide {
+	height: 0;
+	opacity: 0;
+}
+
+.featureList {
+
+	li {
+		padding: 20px;
+
+		@media (min-width: $screenSM) {
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
+
+			&:nth-child(odd) {
+				padding: 20px 20px 20px 40px;
+			}
+
+			&:nth-child(even) {
+				padding: 20px 40px 20px 20px;
+			}
+		}
+	}
+
+	h4 {
+		color: $blackPure;
+		font-family: "Chronicle Text G1 A", "Chronicle Text G1 B";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1em;
+		padding: 10px 0 4px;
+		margin-bottom: 0;
+	}
+
+	.desc, .cat {
+		font-size: 0.75em;
+	}
+
+	.cat {
+		color: $gray;
+		line-height: 18px;
+	}
+
+	.desc {
+		line-height: 20px;
+	}
+}
+
+.sectionWrap {
+
+	@media (min-width: $screenMD) {
+		padding-top: 174px;
+	}
+}
+
+#sectionWrap.activeNav {
+	z-index: 5;
+}

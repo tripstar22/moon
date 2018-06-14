@@ -1,0 +1,30 @@
+<section class="sectionWrap">
+	<div class="row">
+		<div class="small-12 medium-6 medium-offset-4 columns introWrap">
+			<h3>Application Intelligence</h3>
+			<p>Creating adaptive and predictive environments through ambient and artificial intelligence networks.</p>
+		</div>
+	</div><!-- /.row -->
+
+	<div class="row">
+    	<div class="small-12 medium-9 medium-offset-1 columns introWrap">
+			<h3>Application Intelligence</h3>
+			<p>Creating adaptive and predictive environments through ambient and artificial intelligence networks.</p>
+		</div>
+		<div class="small-12 medium-9 medium-offset-4 columns" id="newsFeed">
+			<ul>
+				<li *ngFor="let d of data | async">
+					<a href="{{d.link}}" target="{{d.trgt}}">
+						<img src="{{d.img_sm}}" alt="{{d.imgAlt}}" />
+						<h5>{{d.title}}</h5>
+						<p>{{d.author}}</p>
+					</a>
+				</li>
+				<li>
+					<img src="https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1474474204"/>
+					<h5>Live from MOON Labs</h5>
+					<p>Data telling our daily story</p>
+			</ul>
+		</div>
+	</div><!-- /.row -->
+</section>

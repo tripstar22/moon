@@ -1,0 +1,85 @@
+@import "../../../assets/scss/headings.scss";
+@import "../../../assets/scss/helpers.scss";
+@import "../../../assets/scss/layout.scss";
+@import "../../../assets/scss/fonts.scss";
+
+.wrapWorkflow {
+	padding: 32px 0 60px;
+
+	@media (min-width: $screenSM) {
+		padding: 92px 0 150px;
+	}
+}
+
+.category {
+
+	img {
+		width: 12px;
+		padding-bottom: 15px;
+	}
+}
+
+h4 {
+	font-family: 'maisonneue-book', sans-serif;
+}
+
+ul {
+	color: $blackPure;
+	font-family: 'maisonneue-book', sans-serif;
+	font-size: 0.75em;
+
+	li {
+		line-height: 22px;
+	}
+}
+
+.services {
+
+	@media (min-width: $screenSM) {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-bottom: 40px;
+	}
+
+	@media (min-width: $screenMD) {
+		flex-flow: row nowrap;
+		padding-bottom: 140px;
+	}
+
+	@media (min-width: $screenSM) and (max-width: $screenMD) {
+		justify-content: flex-start;
+	}
+
+	.category {
+		padding-bottom: 20px;
+
+		@media (min-width: $screenMD) {
+			order: 1;
+			flex: 0 1 auto;
+			padding-bottom: 0;
+		}
+
+		@media (min-width: $screenSM) and (max-width: $screenMD) {
+			min-width: 250px;
+		}
+	}
+}
+
+h1 {
+	@media (max-width: $screenSM) {
+		font-size: 1.813em;
+		line-height: 36px;
+		padding-bottom: 30px;
+	}
+
+	@media (min-width: $screenSM) {
+		font-size: 3.125em;
+		line-height: 58px;
+	}
+
+	@media (min-width: $screenSM) and (max-width: $screenMD) {
+		margin-bottom: 50px;
+	}
+}

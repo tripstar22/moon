@@ -1,0 +1,45 @@
+
+<div class="hero" id="hero">
+	<div class="row expanded">
+		<div class="large-3 columns heroNavWrap">
+			<div class="navOuterWrap">
+				<div class="navWrap">
+					<ul class="navDesktop">
+						<li><a [routerLink]="['']">Field Work</a></li>
+						<li><a [routerLink]="['/what-we-do']">What We Do</a></li>
+						<li><a [routerLink]="['/who-we-are']">Who We Are</a></li>
+						<li><a [routerLink]="['/contact']">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-9 columns">
+			<div class="heroWrap">
+				<h1>Hi. <br /> Welcome to Moon.</h1>
+				<img src="assets/imgs/line_white_lg.png" alt="border" />
+				<h2>We build innovative products and services that help leaders move into new frontiers.</h2>
+			</div>
+		</div>
+	</div><!-- /.row -->
+	<div class="scrollWrap">
+		<img src="assets/imgs/arrow_down.png" alt="scroll" />
+	</div>
+</div>
+
+<div class="row expanded" id="sectionWrap">
+	<div id="nav" class="large-2 columns navDesktopWrap">
+		<moon-nav-desktop></moon-nav-desktop>
+	</div>
+	<div class="small-12 large-10 columns">
+		<section class="sectionWrap">
+			<ul class="featureList" id="featureList">
+				<li *ngFor="let d of data | async" class="feature">
+					<img src="{{d.img}}" alt="{{d.imgAlt}}">
+					<h4>{{d.title}}</h4>
+					<p class="cat">{{d.cat}}</p>
+					<p class="desc">{{d.desc}}</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div><!-- /.row -->

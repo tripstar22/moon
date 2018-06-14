@@ -1,0 +1,63 @@
+
+@import "fonts.scss";
+@import "vars.scss";
+
+h1 {
+	font-family: 'maisonneue-medium', sans-serif;
+	font-size: 1.5em;
+	line-height: 37px;
+
+	@media (min-width: $screenMD) {
+		font-size: 3.125em;
+		line-height: 58px;
+	}
+}
+
+.pgTitleWrap {
+	font-size: 1.0em;
+
+	h2 {
+		font-family: 'maisonneue-bold', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 29px;
+		letter-spacing: 3px;
+		margin-top: 0;
+	}
+
+	.borderBtm {
+		width: 25px;
+		height: 1px;
+		background: url('/assets/imgs/border_heading_black.png') center center no-repeat;
+		margin: 0 auto;
+
+		@media (min-width: $screenMD) {
+			display: none;
+		}
+	}
+}
+
+h3 {
+	color: $blackPure;
+	font-family: 'maisonneue-bold', sans-serif;
+	font-size: 1.125em;
+	letter-spacing: 5px;
+	line-height: 38px;
+	text-transform: uppercase;
+	padding-bottom: 14px;
+
+	@media (min-width: $screenSM) {
+		line-height: 50px;
+		padding-bottom: 35px;
+	}
+
+	@media (min-width: $screenMD) {
+		line-height: 28px;
+	}
+}
+
+h4 {
+	color: $blackPure;
+	font-family: 'maisonneue-mono', sans-serif;
+	font-size: 0.75em;
+}

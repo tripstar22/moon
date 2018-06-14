@@ -1,0 +1,104 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/headings.scss";
+@import "../../../assets/scss/layout.scss";
+@import "../../../assets/scss/helpers.scss";
+
+img {
+	width: 100%;
+}
+
+.headingWrap {
+
+	@media (min-width: $screenMD) {
+		position: relative;
+	}
+}
+
+h1 {
+	@media (max-width: $screenSM) {
+		font-size: 1.813em;
+		line-height: 36px;
+		padding-bottom: 30px;
+	}
+
+	@media (min-width: $screenSM) {
+		font-size: 3.125em;
+		line-height: 50px;
+	}
+
+	@media (min-width: $screenSM) and (max-width: $screenMD) {
+		line-height: 58px;
+		margin-bottom: 50px;
+	}
+
+	@media (min-width: $screenMD) {
+		line-height: 58px;
+		position: absolute;
+		top: -90px;
+	}
+}
+
+.wrapOurStory {
+	padding: 0 15px 70px;
+
+	@media (min-width: $screenMD) {
+		padding: 247px 0 95px;
+	}
+}
+
+.wrapWorkers {
+	padding-top: 60px;
+
+	@media (min-width: $screenMD) {
+		padding-top: 82px;
+	}
+}
+
+.item {
+	text-align: center;
+	padding-bottom: 40px;
+
+	@media (min-width: $screenSM) {
+		display: inline-block;
+		padding-bottom: 0;
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+
+	img {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+}
+
+.workerInfo {
+
+	.name {
+		font-family: "Chronicle Text G1 A", "Chronicle Text G1 B";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1em;
+		padding-bottom: 5px;
+	}
+
+	.title {
+		font-family: 'maisonneue-book' sans-serif;
+		font-size: 0.75em;
+	}
+}
+
+.rowBottom {
+
+	@media (min-width: $screenSM) {
+		padding-top: 70px;
+	}
+}
+
+.heroWrap {
+
+	img {
+		width: 100%;
+	}
+}

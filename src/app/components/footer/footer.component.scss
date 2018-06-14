@@ -1,0 +1,103 @@
+
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/fonts.scss";
+@import "../../../assets/scss/layout.scss";
+@import "../../../assets/scss/helpers.scss";
+
+footer {
+	background: $blackPure;
+	font-size: 1.0em;
+	position: relative;
+	z-index: 4;
+	padding: 20px 0;
+
+	@media (min-width: $screenSM) {
+		padding: 150px 0 20px;
+	}
+
+	h4, p, a {
+		color: $whitePure;
+		font-family: 'maisonneue-mono', monospace;
+	}
+
+	h4 {
+		font-size: 1.25em;
+		font-weight: normal;
+		line-height: 28px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-top: 25px;
+		margin-bottom: 5px;
+
+		@media (min-width: $screenSM) {
+			padding-top: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	img {
+		width: 12px;
+		padding: 5px 0;
+	}
+}
+
+.content {
+	padding-top: 20px;
+
+	p {
+		font-size: 0.75em;
+		line-height: 20px;
+		margin: 0 0 5px;
+	}
+
+	a {
+		font-size: 1.0em;
+	}
+
+	.map {
+
+		@media (min-width: $screenXS) {
+			padding-top: 82px;
+			margin-left: 50px;
+		}
+
+		@media (min-width: $screenSM) {
+			padding-top: 57px;
+		}
+
+		@media (min-width: $screenMD) {
+			margin-left: 0;
+		}
+	}
+}
+
+.containerLegal {
+	width: 100%;
+	font-size: 1.0em;
+	padding: 40px 10px 15px;
+
+	@media (min-width: $screenSM) {
+		padding: 0 10px;
+	}
+
+	@media (min-width: $screenMD) {
+		padding: 200px 5% 30px;
+	}
+
+	p {
+		font-family: 'maisonneue-mono', monospace;
+		font-size: 0.625em;
+		text-transform: uppercase;
+		line-height: 16px;
+	}
+}
+
+.wrapSocial {
+
+	a {
+		font-size: 0.75em;
+	}
+}
